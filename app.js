@@ -39,6 +39,8 @@ function calculateResults() {
 }
 
 function showError(errorMessage) {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("results").style.display = "none";
   const errorDiv = document.createElement("div");
 
   const card = document.querySelector(".card");
